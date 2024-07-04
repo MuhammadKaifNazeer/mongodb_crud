@@ -1,0 +1,30 @@
+Data storage:
+--aisi kuch jaga jaha par hum saare users ka data store karte hain
+[database]
+
+types of DBS - SQL | NoSQL
+
+NoSQL  - mongoDB
+
+what and why
+terminologies - collections, documents, schemas, keys, models
+
+
+database --> collections --> document
+
+CODE                            database
+--------------------------------------------------------------
+mongoose.connect      -->       database create
+model create          -->       collection
+CREATE code           -->       document
+
+
+mongodb installation
+mongodb connection
+schema
+model 
+crud
+
+
+
+find() give you array of objects and findOne() give me object
