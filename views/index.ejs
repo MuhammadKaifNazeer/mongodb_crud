@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/public/stylesheets/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      class="w-full h-screen bg-zinc-900 p-5 lg:p-10 flex flex-col items-center justify-center pt-12 text-white"
+    >
+      <nav class="fixed top-5 rounded-full p-2 w-max border">
+        <div class="flex items-center gap-2">
+          <a
+            class="px-3 py-1 flex items-center justify-center hover:bg-zinc-600 rounded duration-200 rounded-full"
+            href="/"
+            >Home</a
+          >
+          <a
+            class="px-3 py-1 flex items-center justify-center hover:bg-zinc-600 rounded duration-200 rounded-full"
+            href="/read"
+            >Read</a
+          >
+        </div>
+      </nav>
+      <div class="w-full sm:max-w-lg md:max-w-md lg:max-w-sm p-5 rounded-lg border border-zinc-800">
+        <h1 class="text-white font-bold text-3xl text-start mb-2 w-full">
+          Create User
+        </h1>
+        <p class="text-zinc-400 text-md lg:text-sm text-start mb-3 w-full">
+          Fill the details below to register a user.
+        </p>
+        <form action="/create" method="POST" class="flex flex-col gap-3">
+          <input
+            class="px-5 py-3 rounded-lg bg-zinc-800 w-full outline-none text-white"
+            type="text"
+            placeholder="name"
+            name="name"
+          />
+          <input
+            class="px-5 py-3 rounded-lg bg-zinc-800 w-full outline-none text-white"
+            type="text"
+            placeholder="email"
+            name="email"
+          />
+          <input
+            class="px-5 py-3 rounded-lg bg-zinc-800 w-full outline-none text-white"
+            type="text"
+            placeholder="image url"
+            name="image"
+          />
+          <input
+            class="px-5 py-3 rounded-lg bg-green-500 cursor-pointer font-bold w-full outline-none text-white"
+            type="submit"
+            value="Create User"
+          />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
